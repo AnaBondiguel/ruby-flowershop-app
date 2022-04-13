@@ -11,3 +11,7 @@ gem "rspec", "~> 3.11"
 gem "tty-box"
 gem "tty-color"
 gem "tty-logger"
+
+gem "colorize"
+gem 'rubocop'
+gem "rspec"

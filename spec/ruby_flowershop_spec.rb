@@ -77,5 +77,10 @@ describe Flowershop do
         flowershop.add_to_order(item,quantity)
         expect(flowershop.get_order().get_items().length).to be(1)
     end
-end
-    
+    it 'should define a welcome method' do
+        name = "Blossom House"
+        bouquet_items = {Paris: 130, Lisbon: 120}
+        flowershop = Flowershop.new(name,bouquet_items)
+        expect(flowershop.welcome).to eq(nil)
+    end
+end    
