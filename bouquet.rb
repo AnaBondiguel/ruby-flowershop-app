@@ -20,10 +20,18 @@ class Bouquet
 
     def display
         puts "Bouquet"
-        puts "----------"
+        puts "--------"
         @bouquet_items.each {|item| puts item}
         return nil
     end
-end
 
+    def validate_item(name)
+         @bouquet_items.each do |bouquet_item|
+          if bouquet_item.name == name
+              return name
+          end
+      end
+            return nil
+        end
+    end
 end

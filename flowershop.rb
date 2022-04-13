@@ -31,10 +31,23 @@ class Flowershop
     def print_bouquet
         @bouquet.display
     end
-end
 
-name = "Blossom House"
-bouquet_items = {Paris: 130, Lisbon: 120}
-flowershop = Flowershop.new(name,bouquet_items)
-flowershop.welcome
-flowershop.print_bouquet
+    def order_total
+        total = 0
+        @order.get_items.each do |item,quantity|
+            total += @bouquet.get_price(item) * quantity
+        end
+        return total
+    end
+
+    def print_order
+        if @order 
+            @order.display
+            puts "Total:    $%.2f" % order_total
+        else
+            puts "Your order is empty. Thank you for coming!"
+        end
+       puts
+    end
+
+end
