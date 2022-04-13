@@ -27,4 +27,14 @@ class Flowershop
     def welcome
         puts "Welcome to #{@name}!"
     end
+
+    def print_bouquet
+        @bouquet.display
+    end
 end
+
+name = "Blossom House"
+bouquet_items = {Paris: 130, Lisbon: 120}
+flowershop = Flowershop.new(name,bouquet_items)
+flowershop.welcome
+flowershop.print_bouquet

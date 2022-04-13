@@ -5,5 +5,7 @@ class BouquetItem
         @price = price
     end
     
-   
+    def to_s
+        return "#{@name}" +" "*(10 - @name.length)+"... #{@price}"
+    end
 end

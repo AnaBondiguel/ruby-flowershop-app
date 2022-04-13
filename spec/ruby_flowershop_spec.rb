@@ -83,4 +83,10 @@ describe Flowershop do
         flowershop = Flowershop.new(name,bouquet_items)
         expect(flowershop.welcome).to eq(nil)
     end
+    it 'should define a print_bouquet method' do
+        name = "Blossom House"
+        bouquet_items = {Paris: 130, Lisbon: 120}
+        flowershop = Flowershop.new(name,bouquet_items)
+        expect(flowershop.print_bouquet).to eq(nil)
+    end
 end    
