@@ -14,4 +14,4 @@ gem "tty-logger"
 
 gem "colorize"
 gem 'rubocop'
-gem "rspec"
+gem 'tty-prompt', '~> 0.23.1'

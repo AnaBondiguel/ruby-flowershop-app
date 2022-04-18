@@ -25,7 +25,8 @@ class Flowershop
     end
 
     def welcome
-        puts "Welcome to #{@name}!"
+        puts "Welcome to #{@name}!".colorize(:red)
+        puts
     end
 
     def print_bouquet
@@ -41,13 +42,15 @@ class Flowershop
     end
 
     def print_order
-        if @order 
-            @order.display
-            puts "Total:    $%.2f" % order_total
+        if  @order.get_items.size > 0
+            puts "Thank you! Here is your order: #{@order.get_items}".colorize(:green)
+            puts "------------------".colorize(:green)
+            puts "Total: $#{order_total}"
         else
-            puts "Your order is empty. Thank you for coming!"
-        end
-       puts
+            puts "------------------"
+            puts "Your order is empty. Thank you for coming!".colorize(:red)
+            end
     end
-
 end
+
+
