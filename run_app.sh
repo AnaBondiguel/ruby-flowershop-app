@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby ruby-flowershop-app.rb
+ruby ruby-flowershop.rb
