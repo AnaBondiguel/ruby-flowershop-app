@@ -20,8 +20,8 @@ class Bouquet
     end
 
     def display
-        puts "Bouquet".colorize(:green)
-        puts "-------------".colorize(:green)
+        puts "Bouquet"
+        puts "-------------"
         @bouquet_items.each {|item| puts item}
         return nil
     end

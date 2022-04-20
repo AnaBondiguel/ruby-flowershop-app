@@ -25,7 +25,7 @@ class Flowershop
     end
 
     def welcome
-        puts "Welcome to #{@name}!".colorize(:red)
+        puts "Welcome to #{@name}!"
         puts
     end
 
