@@ -12,6 +12,8 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [Rubocop](https://github.com/rubocop/rubocop)
 [Colorize](https://github.com/fazibear/colorize)
 [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
+[pastel](https://github.com/piotrmurach/pastel)
+[TTY-font](https://github.com/piotrmurach/tty-font)
 
 # A link of my source control repository
 [My GitHub Application](git@github.com:AnaBondiguel/ruby-flowershop-app.git)
@@ -119,3 +121,15 @@ gem 'tty-prompt', '~> 0.23.1'
  Intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 
 - how to use any command line arguments made for the application
+
+I used the command line arguments for saying "hello" to the users with if and else statement
+  if ARGV[0]
+    customer_name = ARGV[0] 
+
+  else
+    customer_name = prompt.ask("What is your name?")
+
+    puts "-----------------"
+    puts "Hello, #{customer_name}!".colorize(:blue)
+    puts ""
+end

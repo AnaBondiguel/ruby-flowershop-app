@@ -12,3 +12,4 @@ gem "colorize"
 gem 'rubocop', '~> 1.27', require: false
 gem 'tty-prompt', '~> 0.23.1'
 gem 'tty-font'
+gem "pastel"

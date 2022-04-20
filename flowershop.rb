@@ -49,7 +49,8 @@ class Flowershop
         else
             puts "------------------"
             puts "Your order is empty. Thank you for coming!".colorize(:red)
-            end
+           
+        end
     end
 end
 
