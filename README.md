@@ -14,6 +14,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
 [pastel](https://github.com/piotrmurach/pastel)
 [TTY-font](https://github.com/piotrmurach/tty-font)
+[JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com)
 
 # A link of my source control repository
 [My GitHub Application](git@github.com:AnaBondiguel/ruby-flowershop-app.git)
@@ -115,6 +116,12 @@ gem "colorize"
 gem 'rubocop'
 
 gem 'tty-prompt', '~> 0.23.1'
+
+gem 'tty-font'
+
+gem "pastel"
+
+gem'json'
 
 - any system/hardware requirements
  

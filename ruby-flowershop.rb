@@ -4,8 +4,7 @@ require 'tty-prompt'
 prompt = TTY::Prompt.new
 require 'tty-font'
 font = TTY::Font.new(:doom)
-pastel = Pastel.new
-
+require 'json'
 
 # create an instance of flowershop
 bouquet = {"PARIS" => 130, "LISBON" => 120, "OSAKA" => 130, "SYDNEY" => 120, "CANNES" => 110, "LONDON" => 100, "BARCELONA" => 110, "SANTORINI" => 100}
@@ -30,6 +29,12 @@ pastel = Pastel.new
     puts pastel.blue(pastel.underline("Please choose your flowers from Bouquet:"))
     puts""
 
+puts "Bouquet Description".colorize(:red)
+file = File.read('./bouquet.json')
+data_hash = JSON.parse(file)
+puts JSON.pretty_generate(data_hash)
+puts""
+
 loop do 
     flowershop.print_bouquet
     puts
@@ -52,6 +57,11 @@ loop do
         end
     end
 end
-# # print the order summary
+#  print the order summary
 flowershop.print_order
- 
+
+# print email, address, website of the flowershop
+puts ""
+puts pastel.blue(pastel.italic("If you need to contact us, here is our contact detail:"))
+my_hash = {:Email => "information@blossom.com.au", :Address => "8 Sunset Rd, Surry Hills, NSW2010", :Website => "www.Blossomhouse.com.au", :Phone => "0452807003"}
+puts JSON.generate(my_hash)
