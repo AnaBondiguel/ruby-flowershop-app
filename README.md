@@ -5,9 +5,7 @@ This is a flower shop "Blosson House" appplication written by Ruby.
 You can tests by first running `bundle add` to add the rspec dependency, then run 
 `rspec` in the project root directory to rub tests.
 
-
-
-# Full attribution to referenced sources
+# R3 Full attribution to referenced sources
 [TTY Component](https://ttytoolkit.org/components/)
 [Rubocop](https://github.com/rubocop/rubocop)
 [Colorize](https://github.com/fazibear/colorize)
@@ -15,6 +13,10 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [pastel](https://github.com/piotrmurach/pastel)
 [TTY-font](https://github.com/piotrmurach/tty-font)
 [JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com)
+[JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
+[Rspec](https://github.com/rspec/rspec-metagem/)
+[RubyGems](https://rubygems.org/)
+[Jarrod-examples](https://replit.com/@jarroddalefolin)
 
 # A link of my source control repository
 [My GitHub Application](git@github.com:AnaBondiguel/ruby-flowershop-app.git)

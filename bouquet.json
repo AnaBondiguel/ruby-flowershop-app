@@ -1,17 +1,19 @@
-[
-{"PARIS": "A romantic feminine floral design featuring fuchsia, lilac & pink colours."},
+ {
+    "PARIS" : "A romantic feminine floral design featuring fuchsia, lilac & pink colours.",
+    
+    "LISBON":"Named after the bright and colourful Portuguese seaside town, our Lisbon collection stands out for its pink and apricot pastel hues. Lisianthus & Carnation flowers with Monstera Leaves.",
 
-{"LISBON": "Named after the bright and colourful Portuguese seaside town, our Lisbon collection stands out for its pink and apricot pastel hues. Lisianthus & Carnation flowers with Monstera Leaves."},
+    "OSAKA":"Japan’s annual Cherry Blossom festival was the inspiration for this unique floral design we named “Osaka”. Osaka features soft pink colours paired with delicate white puffs. Roses, Chrysanthemum Disbuds and Gypsophilia.",
 
-{"OSAKA": "Japan’s annual Cherry Blossom festival was the inspiration for this unique floral design we named “Osaka”. Osaka features soft pink colours paired with delicate white puffs. Roses, Chrysanthemum Disbuds and Gypsophilia."},
+    "SYDNEY":"Australian native flowers and foliage dominate our rustic Broome design. This arrangement features a strong scent of Eucalyptus.",
 
-{"SYDNEY": "Australian native flowers and foliage dominate our rustic Broome design. This arrangement features a strong scent of Eucalyptus."},
+    "CANNES":"The delicate appearance of this beautiful arrangement belies its underlying strength. Carnations, Gypsophilia, Chrysanthemum Disbud, Anthurium, Stock, Roses and Caladium Leaf.",
 
-{"CANNES":"The delicate appearance of this beautiful arrangement belies its underlying strength. Carnations, Gypsophilia, Chrysanthemum Disbud, Anthurium, Stock, Roses and Caladium Leaf."},
+    "LONDON":"Perfect for pink lovers, our London design features bold pops of pink combined with lush green foliage. Snapdragon, Tulip and Chrysanthemum Disbud flowers with Cypress foliage.",
 
-{"LONDON": "Perfect for pink lovers, our London design features bold pops of pink combined with lush green foliage. Snapdragon, Tulip and Chrysanthemum Disbud flowers with Cypress foliage."},
+    "BARCELONA":"With its dusky pinks, sunny yellows and warm, earthy browns, this gorgeous design is radiant and colourful. Magnolia foliage, Banskia, Lissianthus, Carnations, Yellow Pom Pom Disbuds and Local Chrysanthemum.",
 
-{"BARCELONA": "With its dusky pinks, sunny yellows and warm, earthy browns, this gorgeous design is radiant and colourful. Magnolia foliage, Banskia, Lissianthus, Carnations, Yellow Pom Pom Disbuds and Local Chrysanthemum."},
+    "SANTORINI":"Named after white colour of architecture with blue sourthern Aegean Sea, the design features textured pops of white blooms. Delicate clusters of white Lisianthus, Chrysanthemum Disbuds and Alstroemeria, backed by Magnolia foliage."
 
-{"SANTORINI": "Named after white colour of architecture with blue sourthern Aegean Sea, the design features textured pops of white blooms. Delicate clusters of white Lisianthus, Chrysanthemum Disbuds and Alstroemeria, backed by Magnolia foliage."}
-]
+  }
+
