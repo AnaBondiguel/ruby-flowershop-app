@@ -19,7 +19,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [Jarrod-examples](https://replit.com/@jarroddalefolin)
 
 # R4 A link of my source control repository
-[My-GitHub](git@github.com:AnaBondiguel/ruby-flowershop-app.git)
+[MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
 
 # R5 Identify any code style guide or styling conventions that the application will adhere to
 I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022). [Rubocop](https://github.com/rubocop/rubocop)
@@ -38,15 +38,15 @@ Welcome message displays flower shop name
 Bouquets displays bouquet items
 
 - Placing An Order:
-1. Validate item using bouquets
-2. Add item to order
+ 1. Validate item using bouquets
+ 2. Add item to order
 
 - Displays Order and Total Order Price:
-1. Display order items from order
-2. Display order cost using prices from bouquets and items in order
+ 1. Display order items from order
+ 2. Display order cost using prices from bouquets and items in order
 
 # R7 Develop an implementation plan
-## outlines how each feature will be implemented and a checklist of tasks for each feature
+## Outlines how each feature will be implemented and a checklist of tasks for each feature
 Feature 1. The Flowershop class
 
 - Attributes: name, bouquet, order
@@ -80,7 +80,7 @@ Feature 4. The BouquetItem class
 - Checklists: 2 methods, method parameters, method returns, testing
 
 
-## prioritise the implementation of different features, or checklist items within a feature
+## Prioritise the implementation of different features, or checklist items within a feature
 
  Building features from the lowest data structure to the highest one, and the order is: BouquetItem, Bouquet, Order, and Flowershop
 
@@ -92,7 +92,7 @@ Feature 4. The BouquetItem class
 
 4. Items in Flowershop: initialize the name, bouquet, and order, the bouquets of the flowershop, add an item to order, get an order,  define a welcome method, define a print_bouquet method, calculate order total, & define a print_order method.
 
-## provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
+## Provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
 
 I used Trello for my project management. I set up each feature into different size projects, such as, large and extra large. I also set up a deadline for each feature. BouquetItem, Bouquet, and Order should be done on 17 April, and Flowershop is an extra large project amd should be done on 18 April. 
 
@@ -105,7 +105,7 @@ Reference for my project management: [Trello](https://trello.com/b/u7TEDeFr/app-
 ![Feature4](Feature4.png)
 
 # R8 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
-## steps to install the application
+## Steps to install the application
 
 Step 1 Break down the problem
 
@@ -115,7 +115,7 @@ Step 3 Write tests
 
 Step 4 Write the application for the flower shop
 
-## any dependencies required by the application to operate
+## Any dependencies required by the application to operate
 
 gem "rspec", "~> 3.11"
 
@@ -131,17 +131,20 @@ gem "pastel"
 
 gem'json'
 
-## any system/hardware requirements
+## Any system/hardware requirements
  
  Intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 
-## how to use any command line arguments made for the application
+## How to use any command line arguments made for the application
 
 I used the command line arguments for saying "hello" to the users with if and else statement
 
   if ARGV[0]
+
     customer_name = ARGV[0] 
+    
   else
+
     customer_name = prompt.ask("What is your name?")
 
     puts "-----------------"
