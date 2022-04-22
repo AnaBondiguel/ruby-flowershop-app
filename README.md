@@ -6,7 +6,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 `rspec` in the project root directory to rub tests.
 
 # R3 Full attribution to referenced sources
-[TTY Component](https://ttytoolkit.org/components/)
+<!-- [TTY Component](https://ttytoolkit.org/components/)
 [Rubocop](https://github.com/rubocop/rubocop)
 [Colorize](https://github.com/fazibear/colorize)
 [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
@@ -17,12 +17,16 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [Rspec](https://github.com/rspec/rspec-metagem/)
 [RubyGems](https://rubygems.org/)
 [Jarrod-examples](https://replit.com/@jarroddalefolin)
+[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
+[RubyStyleGuide](https://rubystyle.guide/) -->
 
 # R4 A link of my source control repository
 [MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
 
 # R5 Identify any code style guide or styling conventions that the application will adhere to
-I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022). [Rubocop](https://github.com/rubocop/rubocop)
+My application followed the Ruby Style Guide (RubyStyleGuide, 2022) that recommends best practices for real-world Ruby programmers who can write code that can be maintained by other real-world Ruby programmers.The guidelines intended to improve the readability of code and make it consistent across the wide spectrum of Ruby code.  [RubyStyleGuide](https://rubystyle.guide/)
+
+I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022; RuboCopDocs, 2022). [Rubocop](https://github.com/rubocop/rubocop)[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
 
 #	R6 Develop a list of features that are included in the application. 
 ## Four Features: 
@@ -116,6 +120,7 @@ Step 3 Write tests
 Step 4 Write the application for the flower shop
 
 ## Any dependencies required by the application to operate
+I intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 
 gem "rspec", "~> 3.11"
 
@@ -132,8 +137,9 @@ gem "pastel"
 gem'json'
 
 ## Any system/hardware requirements
- 
- Intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
+ ![myMacsystem-requirements](systemrequirement.png)
+
+If users have the same system as me or better, the flowershop appication will definitely work.
 
 ## How to use any command line arguments made for the application
 
