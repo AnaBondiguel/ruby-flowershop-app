@@ -66,20 +66,11 @@ end
 flowershop.print_order
 
 # Delivery service
-<<<<<<< HEAD
 begin
     
 puts""
 puts "Do you need our delivery service?".colorize(:blue)
 answer = gets.chomp
-rescue StandardError => e
-    puts "An error occured: #{e.inspect}"
-end
-=======
-puts""
-puts "Do you need our delivery service?".colorize(:blue)
-answer = gets.chomp
->>>>>>> 0defda0305c4c8bece9f9cf7b3cc9c6e0b2737d6
  if answer == "yes"
     if ARGV[1]
         customer_address = ARGV[1]
@@ -94,10 +85,10 @@ answer = gets.chomp
     puts "See you soon!".colorize(:blue)
 end
 
-<<<<<<< HEAD
+rescue StandardError => e
+    puts "An error occured: #{e.inspect}"
+end
 
-=======
->>>>>>> 0defda0305c4c8bece9f9cf7b3cc9c6e0b2737d6
 # print email, address, website of the flowershop
 puts ""
 puts pastel.blue(pastel.italic("If you need to contact us, here is our contact detail:"))
