@@ -6,7 +6,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 `rspec` in the project root directory to rub tests.
 
 # R3 Full attribution to referenced sources
-<!-- [TTY Component](https://ttytoolkit.org/components/)
+[TTY Component](https://ttytoolkit.org/components/)
 [Rubocop](https://github.com/rubocop/rubocop)
 [Colorize](https://github.com/fazibear/colorize)
 [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
@@ -18,7 +18,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [RubyGems](https://rubygems.org/)
 [Jarrod-examples](https://replit.com/@jarroddalefolin)
 [RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
-[RubyStyleGuide](https://rubystyle.guide/) -->
+[RubyStyleGuide](https://rubystyle.guide/)
 
 # R4 A link of my source control repository
 [MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
