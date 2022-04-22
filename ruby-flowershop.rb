@@ -11,7 +11,7 @@ bouquet = {"PARIS" => 130, "LISBON" => 120, "OSAKA" => 130, "SYDNEY" => 120, "CA
 flowershop = Flowershop.new("Blossom House", bouquet)
 
 # say hello to customers
-  if ARGV[0]
+if ARGV[0]
     customer_name = ARGV[0] 
 
   else
@@ -65,6 +65,24 @@ end
 #  print the order summary
 flowershop.print_order
 
+# Delivery service
+puts""
+puts "Do you need our delivery service?".colorize(:blue)
+answer = gets.chomp
+ if answer == "yes"
+    if ARGV[1]
+        customer_address = ARGV[1]
+    else
+        customer_address = prompt.ask("Where would you like to be deliverd?".colorize(:blue))
+        puts "Your delivery fee is $30 for #{customer_address}. We'll send your flowers to your place shortly."
+        puts "--------------------------------------"
+        puts "Total: $#{flowershop.order_total + 30}"
+    end
+ else
+    puts "----------------"
+    puts "See you soon!".colorize(:blue)
+end
+
 # print email, address, website of the flowershop
 puts ""
 puts pastel.blue(pastel.italic("If you need to contact us, here is our contact detail:"))
@@ -72,3 +90,7 @@ my_hash = {:Email => "information@blossomhouse.com.au", :Phone => "0452807003", 
 my_hash.each do |key, value|
     puts "#{key}: #{value}".colorize(:green)
 end
+
+
+
+

@@ -43,9 +43,14 @@ class Flowershop
 
     def print_order
         if  @order.get_items.size > 0
-            puts "Thank you! Here is your order: #{@order.get_items}".colorize(:green)
+            puts "Thank you! Here is your order:"
+            @order.get_items.each do |key, value|
+                puts "#{key}: #{value}".colorize(:green)
+            end
+            
             puts "------------------".colorize(:green)
             puts "Total: $#{order_total}"
+        
         else
             puts "------------------"
             puts "Your order is empty. Thank you for coming!".colorize(:red)
