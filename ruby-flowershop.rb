@@ -12,14 +12,17 @@ flowershop = Flowershop.new("Blossom House", bouquet)
 
 # say hello to customers
 if ARGV[0]
-    customer_name = ARGV[0] 
-
-  else
+     customer_name = ARGV[0] 
+else
+ begin
     customer_name = prompt.ask("What is your name?")
-
+    raise "Please enter your name" if customer_name.empty?
     puts "-----------------"
     puts "Hello, #{customer_name}!".colorize(:blue)
+ rescue
     puts ""
+    retry
+ end
 end
 
 # print welcome message and the marketing slogan
@@ -40,6 +43,7 @@ puts "Bouquet Description".colorize(:red)
 end
 
 loop do 
+#print bouquet list
     flowershop.print_bouquet
     puts
     puts "What would you like to order? When you are finished, please type 'done'.".colorize(:blue)
@@ -65,22 +69,12 @@ end
 #  print the order summary
 flowershop.print_order
 
-# Delivery service
-<<<<<<< HEAD
-begin
-    
+# Delivery service  
 puts""
 puts "Do you need our delivery service?".colorize(:blue)
-answer = gets.chomp
-rescue StandardError => e
-    puts "An error occured: #{e.inspect}"
-end
-=======
-puts""
-puts "Do you need our delivery service?".colorize(:blue)
-answer = gets.chomp
->>>>>>> 0defda0305c4c8bece9f9cf7b3cc9c6e0b2737d6
- if answer == "yes"
+answer = gets.chomp.downcase
+
+if answer == "yes"
     if ARGV[1]
         customer_address = ARGV[1]
     else
@@ -89,16 +83,16 @@ answer = gets.chomp
         puts "--------------------------------------"
         puts "Total: $#{flowershop.order_total + 30}"
     end
- else
+elsif answer == "no"
     puts "----------------"
     puts "See you soon!".colorize(:blue)
+# Raising input error
+else
+    puts "Your input: #{answer} is invalid"
+    raise "Invalid Input"
 end
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0defda0305c4c8bece9f9cf7b3cc9c6e0b2737d6
-# print email, address, website of the flowershop
+# Print email, address, website of the flowershop
 puts ""
 puts pastel.blue(pastel.italic("If you need to contact us, here is our contact detail:"))
 my_hash = {:Email => "information@blossomhouse.com.au", :Phone => "0452807003", :Address => "8 Sunset Rd, Surry Hills, NSW2010", :Website => "www.Blossomhouse.com.au"}
