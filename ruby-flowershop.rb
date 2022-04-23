@@ -19,6 +19,7 @@ else
     raise InvalidNameError if customer_name.empty?
     puts "-----------------"
     puts "Hello, #{customer_name}!".colorize(:blue)
+ rescue
     puts ""
 rescue
     puts "Please enter your name!"
