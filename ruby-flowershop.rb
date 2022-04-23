@@ -16,11 +16,12 @@ if ARGV[0]
 else
  begin
     customer_name = prompt.ask("What is your name?")
-    raise "Please enter your name" if customer_name.empty?
+    raise InvalidNameError if customer_name.empty?
     puts "-----------------"
     puts "Hello, #{customer_name}!".colorize(:blue)
- rescue
     puts ""
+rescue
+    puts "Please enter your name!"
     retry
  end
 end
@@ -30,31 +31,31 @@ flowershop.welcome
 pastel = Pastel.new
     puts pastel.red(font.write("Feel the Blossom"))
     puts pastel.blue(pastel.underline("Please choose your flowers from Bouquet:"))
-    puts""
+    puts ""
 
 #Print Bouquet Description from JSON file
 puts "Bouquet Description".colorize(:red)
-    puts""
+    puts ""
     file = File.read('./bouquet.json')
     data_hash = JSON.parse(file)
     data_hash.each do |key, value|
     puts "#{key}: #{value}"
-    puts""
+    puts ""
 end
 
 loop do 
-#print bouquet list
+# Print bouquet price list
     flowershop.print_bouquet
     puts
     puts "What would you like to order? When you are finished, please type 'done'.".colorize(:blue)
     input = gets.strip.upcase
    
-#  if users are done, break from loop
+#  If users are done, break from loop
     if (input == 'DONE')
         break
     end
 
-  # check for valid bouquet item
+  # Check for valid bouquet item
     item = flowershop.bouquet.validate_item(input)
         if (item)
             puts "How many would you like?".colorize(:blue)
@@ -66,30 +67,35 @@ loop do
     end
 end
 
-#  print the order summary
+#  Print the order summary
 flowershop.print_order
 
 # Delivery service  
-puts""
-puts "Do you need our delivery service?".colorize(:blue)
-answer = gets.chomp.downcase
+if flowershop.order_total > 0
+    puts""
+    puts "Do you need our delivery service?".colorize(:blue)
+    answer = gets.chomp.downcase
 
-if answer == "yes"
-    if ARGV[1]
-        customer_address = ARGV[1]
-    else
-        customer_address = prompt.ask("Where would you like to be deliverd?".colorize(:blue))
-        puts "Your delivery fee is $30 for #{customer_address}. We'll send your flowers to your place shortly."
-        puts "--------------------------------------"
-        puts "Total: $#{flowershop.order_total + 30}"
-    end
-elsif answer == "no"
-    puts "----------------"
-    puts "See you soon!".colorize(:blue)
+    if answer == "yes"
+        if ARGV[1]
+            customer_address = ARGV[1]
+        else
+            customer_address = prompt.ask("Where would you like to be delivered?".colorize(:blue))
+            puts "Your delivery fee is $30 for #{customer_address}. We'll send your flowers to your place shortly."
+            puts "--------------------------------------"
+            puts "Total: $#{flowershop.order_total + 30}"
+            end
+    elsif answer == "no"
+            puts "----------------"
+            puts "See you soon!".colorize(:blue)
 # Raising input error
+    else
+            puts "Your input: #{answer} is invalid. Please enter yes or no answer!".colorize(:red)
+            raise "Invalid Input"
+    end
+
 else
-    puts "Your input: #{answer} is invalid"
-    raise "Invalid Input"
+    puts "Have a nice day!".colorize(:red)
 end
 
 # Print email, address, website of the flowershop
@@ -99,7 +105,3 @@ my_hash = {:Email => "information@blossomhouse.com.au", :Phone => "0452807003", 
 my_hash.each do |key, value|
     puts "#{key}: #{value}".colorize(:green)
 end
-
-
-
-

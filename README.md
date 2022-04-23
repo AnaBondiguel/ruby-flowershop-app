@@ -162,7 +162,7 @@ I used the command line arguments for saying "hello" to the users with if and el
     puts ""
 end
 
-Also, I used the command line argrments for the delivery service of the flower shop with if and else statement.
+Also, I used the command line arguments for the delivery service of the flower shop with if and else statement.
 
 if answer == "yes"
 
