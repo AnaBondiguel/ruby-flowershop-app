@@ -19,6 +19,7 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 [Jarrod-examples](https://replit.com/@jarroddalefolin)
 [RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
 [RubyStyleGuide](https://rubystyle.guide/)
+[Rspec](https://rubygems.org/gems/respec)
 
 # R4 A link of my source control repository
 [MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
@@ -27,6 +28,9 @@ You can tests by first running `bundle add` to add the rspec dependency, then ru
 My application followed the Ruby Style Guide (RubyStyleGuide, 2022) that recommends best practices for real-world Ruby programmers who can write code that can be maintained by other real-world Ruby programmers.The guidelines intended to improve the readability of code and make it consistent across the wide spectrum of Ruby code.  [RubyStyleGuide](https://rubystyle.guide/)
 
 I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022; RuboCopDocs, 2022). [Rubocop](https://github.com/rubocop/rubocop)[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
+
+RuboCop - Flower shop application
+![RuboCop-flowershop-app](RuboCop.png)
 
 #	R6 Develop a list of features that are included in the application. 
 ## Four Features: 
@@ -143,7 +147,7 @@ If users have the same system as me or better, the flowershop appication will de
 
 ## How to use any command line arguments made for the application
 
-I used the command line arguments for saying "hello" to the users with if and else statement
+I used the command line arguments for saying "hello" to the users with if and else statement.
 
   if ARGV[0]
 
@@ -157,3 +161,20 @@ I used the command line arguments for saying "hello" to the users with if and el
     puts "Hello, #{customer_name}!".colorize(:blue)
     puts ""
 end
+
+Also, I used the command line argrments for the delivery service of the flower shop with if and else statement.
+
+if answer == "yes"
+
+    if ARGV[1]
+
+        customer_address = ARGV[1]
+
+    else
+
+        customer_address = prompt.ask("Where would you like to be deliverd?".colorize(:blue))
+
+        puts "Your delivery fee is $30 for #{customer_address}. We'll send your flowers to your place shortly."
+        puts "--------------------------------------"
+        puts "Total: $#{flowershop.order_total + 30}"
+    end
