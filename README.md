@@ -207,3 +207,16 @@ if answer == "yes"
         puts "--------------------------------------"
         puts "Total: $#{flowershop.order_total + 30}"
     end
+
+
+# R16 Utilise source control throughout the development of the application by:
+## making regular commits (at least 20 commits) with a commit message that summarises the changes
+screeshots from my git log
+
+ ![gitcommit1](commitmessage1.png)
+ ![gitcommit2](commitmessage2.png)
+ ![gitcommit3](commitmessage3.png)
+
+## pushing all commits to a remote repository
+Please see my GitHub
+[MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
