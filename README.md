@@ -193,8 +193,6 @@ end
 
 Also, I used the command line arguments for the delivery service of the flower shop with if and else statement.
 
-if answer == "yes"
-
     if ARGV[1]
 
         customer_address = ARGV[1]
@@ -208,15 +206,17 @@ if answer == "yes"
         puts "Total: $#{flowershop.order_total + 30}"
     end
 
-
 # R16 Utilise source control throughout the development of the application by:
-## making regular commits (at least 20 commits) with a commit message that summarises the changes
+## Making regular commits (at least 20 commits) with a commit message that summarises the changes
 screeshots from my git log
 
  ![gitcommit1](commitmessage1.png)
  ![gitcommit2](commitmessage2.png)
  ![gitcommit3](commitmessage3.png)
 
-## pushing all commits to a remote repository
+## Pushing all commits to a remote repository
+I pushed my git commits to my repository every time when I made git commits with a message. Here is an example for pushing my git commits to my repository:
+![pushgitcommits](pushgitcommit.png)
+
 Please see my GitHub
 [MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)

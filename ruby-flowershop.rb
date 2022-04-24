@@ -18,11 +18,12 @@ else
   begin
     customer_name = prompt.ask('What is your name?')
     raise InvalidNameError if customer_name.empty?
+
     puts '-----------------'
     puts "Hello, #{customer_name}!".colorize(:blue)
     puts ''
   rescue StandardError
-    puts 'Please enter your name!'
+    puts 'Please enter your name!'.colorize(:red)
     retry
   end
 end
@@ -47,7 +48,7 @@ end
 loop do
   # Print bouquet price list
   flowershop.print_bouquet
-  puts
+  puts ''
   puts "What would you like to order? When you are finished, please type 'done'.".colorize(:blue)
   input = gets.strip.upcase
 
