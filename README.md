@@ -1,54 +1,69 @@
 # Ruby flower shop application
 
-This is a flower shop "Blosson House" appplication written by Ruby.
-
+This is a flower shop "Blosson House" appplication written in Ruby.
+<!-- 
+Is this a requirement to have headings like this?
+Can this be just: Resources
+-->
 # R3 Full attribution to referenced sources
-[TTY Component](https://ttytoolkit.org/components/)
-[Rubocop](https://github.com/rubocop/rubocop)
-[Colorize](https://github.com/fazibear/colorize)
-[TTY-prompt](https://github.com/piotrmurach/tty-prompt)
-[pastel](https://github.com/piotrmurach/pastel)
-[TTY-font](https://github.com/piotrmurach/tty-font)
-[JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com)
-[JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
-[Rspec](https://github.com/rspec/rspec-metagem/)
-[RubyGems](https://rubygems.org/)
-[Jarrod-examples](https://replit.com/@jarroddalefolin)
-[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
-[RubyStyleGuide](https://rubystyle.guide/)
-[Rspec](https://rubygems.org/gems/respec)
+<!-- Use markdown list :) -->
+- [TTY Component](https://ttytoolkit.org/components/)
+- [Rubocop](https://github.com/rubocop/rubocop)
+- [Colorize](https://github.com/fazibear/colorize)
+- [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
+- [pastel](https://github.com/piotrmurach/pastel)
+- [TTY-font](https://github.com/piotrmurach/tty-font)
+- [JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com)
+- [JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
+- [Rspec](https://github.com/rspec/rspec-metagem/)
+- [RubyGems](https://rubygems.org/)
+- [Jarrod-examples](https://replit.com/@jarroddalefolin)
+- [RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
+- [RubyStyleGuide](https://rubystyle.guide/)
+- [Rspec](https://rubygems.org/gems/respec)
+<!-- 
+This is usually linked above in the description of your app.
+Something like
+# Project
 
+Some Description...
+You can find all the source code in this [repository](https://github.com/AnaBondiguel/ruby-flowershop-app.git).
+-->
 # R4 A link of my source control repository
-[MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
+- [MyGitHub](https://github.com/AnaBondiguel/ruby-flowershop-app.git)
 
+<!-- 
+You can just use this heading instead: 
+# Style guide and conventions 
+-->
 # R5 Identify any code style guide or styling conventions that the application will adhere to
-My application followed the Ruby Style Guide (RubyStyleGuide, 2022) that recommends best practices for real-world Ruby programmers who can write code that can be maintained by other real-world Ruby programmers.The guidelines intended to improve the readability of code and make it consistent across the wide spectrum of Ruby code.  [RubyStyleGuide](https://rubystyle.guide/)
 
-I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022; RuboCopDocs, 2022). [Rubocop](https://github.com/rubocop/rubocop)[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
+My application followed the Ruby Style Guide ([RubyStyleGuide](https://rubystyle.guide/), 2022) that recommends best practices for real-world Ruby programmers who can write code that can be maintained by other real-world Ruby programmers.
+The guidelines intended to improve the readability of code and make it consistent across the wide spectrum of Ruby code. 
 
-RuboCop - Flower shop application
+I used [RuboCop](https://docs.rubocop.org/) to guide code style.
+`RuboCop` is a Ruby static code analyzer and code formatter.
+It is not only reporting problems that are discovered in my code but also automatically fix many of them for me.
+Out of the box `RuboCop` will enforce many of the guidelines outlined in the community [RubyStyleGuide](https://rubystyle.guide/).
+
+Here's a sample screenshot of how it works:
 ![RuboCop-flowershop-app](RuboCop.png)
 
 #	R6 Develop a list of features that are included in the application. 
 ## Four Features: 
-
-Display Welcome, Display Bouquets, Placing An Order, and Display Order and Total Order Price
-
-## Describe Each Feature:
-
-- Display Welcome:
+#### Display Welcome
 Welcome message displays flower shop name
 
-- Display Bouquets:	
+#### Display Bouquets
 Bouquets displays bouquet items
 
-- Placing An Order:
- 1. Validate item using bouquets
- 2. Add item to order
+#### Placing An Order
+  1. Validate item using bouquets
+  2. Add item to order
 
-- Displays Order and Total Order Price:
- 1. Display order items from order
- 2. Display order cost using prices from bouquets and items in order
+#### Display Order and Total Order Price
+  1. Display order items from order
+  2. Display order cost using prices from bouquets and items in order
 
 # R7 Develop an implementation plan
 ## Outlines how each feature will be implemented and a checklist of tasks for each feature
@@ -144,6 +159,7 @@ Reference for my project management: [Trello](https://trello.com/b/u7TEDeFr/app-
 # R8 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
 ## Steps to install the application
 
+<!-- This should be a list of steps on how someone can setup your project. -->
 Step 1 Break down the problem
 
 Step 2 Define the data structure
