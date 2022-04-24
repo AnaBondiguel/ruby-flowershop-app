@@ -2,9 +2,6 @@
 
 This is a flower shop "Blosson House" appplication written by Ruby.
 
-You can tests by first running `bundle add` to add the rspec dependency, then run 
-`rspec` in the project root directory to rub tests.
-
 # R3 Full attribution to referenced sources
 [TTY Component](https://ttytoolkit.org/components/)
 [Rubocop](https://github.com/rubocop/rubocop)
@@ -55,38 +52,69 @@ Bouquets displays bouquet items
 
 # R7 Develop an implementation plan
 ## Outlines how each feature will be implemented and a checklist of tasks for each feature
-Feature 1. The Flowershop class
+### Feature 1. The Flowershop class
 
 - Attributes: name, bouquet, order
 
 - Actions: Display welcome message, display bouquets, display order with total, and add item to order
 
-- Checklists: 8 methods, method parameters, method returns, control structures, testing
+- Checklists: 8 methods, 4 method parameters, 2 method returns, 1 control structure, 6 tests
 
-Feature 2. The Bouquet class:
+Methods: initialize method, print_order method, order_total method, print_bouquet method, welcome method, get_order method, add_to_order method, pupolate_bouquet method
 
-- Attributes: bouquet items, item price
+Method parameters: name and bouquet_items for initialize method, item and quantity for add_to_order method, bouquet_items for populate_bouquet method
 
-- Actions: add bouquet item, display bouquet, get price for bouquet item, and validate bouquet item
+Method returns: return order, return total
 
-- Checklists: 6 methods, method parameters, method returns, control structure, testing
+Tests: create a flowerhsop with a name, create a flowershop with a bouquet, add an item to order, define a welcome method, define a print_bouquet method, calculate order total
 
-Feature 3. The Order class
+### Feature 2. The Order class
 
 - Attributes: order items, item quantity
 
 - Actions: add item, get items, display order items
 
-- Checklists: 3 methods, method parameters, method returns, testing
+- Checklists: 3 methods, 2 method parameters, 1 method return, 2 tests
 
-Feature 4. The BouquetItem class
+Methods: initialize method, add_item method, get_item method
+
+Method parameters: name and quantity for add_item method
+
+Method returns: return order_items
+
+Tests: add item to order, update item quantity
+
+### Feature 3. The Bouquet class:
+
+- Attributes: bouquet items, item price
+
+- Actions: add bouquet item, display bouquet, get price for bouquet item, and validate bouquet item
+
+- Checklists: 6 methods, 2 method parameters, 5 method returns, 1 control structure, 4 tests
+
+Methods: initialize method, add_item method, get_price method, get_items method, display method, validate_item method
+
+Method parameters: name and price for add_item method, name for get_price method, name for validate_item method
+
+Method returns: return price of item, return bouquet items, return nil(display method), return name of bouquet item or nil (validate_item method)
+
+Tests: get item price, add item, return item name for validate item, return nil for invalid item
+
+### Feature 4. The BouquetItem class
 
 - Attributes: item price, item name
 
 - Actions: display name and price of items
 
-- Checklists: 2 methods, method parameters, method returns, testing
+- Checklists: 2 methods, 2 method parameters, 1 method returns, 2 tests
 
+Methods: initialize method, to_s method
+
+Method parameters: name and price for initialize method
+
+Method returns: return name and price of bouquet items
+
+Tests: return the price of the item, return the name of the item
 
 ## Prioritise the implementation of different features, or checklist items within a feature
 
@@ -126,19 +154,19 @@ Step 4 Write the application for the flower shop
 ## Any dependencies required by the application to operate
 I intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 
-gem "rspec", "~> 3.11"
+gem "rspec", "~> 3.11"  [Rspec](https://rubygems.org/gems/respec) [Rspec](https://github.com/rspec/rspec-metagem/)
 
-gem "colorize"
+gem "colorize"   [Colorize](https://github.com/fazibear/colorize)
 
-gem 'rubocop'
+gem 'rubocop'   [Rubocop](https://github.com/rubocop/rubocop)
 
-gem 'tty-prompt', '~> 0.23.1'
+gem 'tty-prompt', '~> 0.23.1'  [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
 
-gem 'tty-font'
+gem 'tty-font'   [TTY-font](https://github.com/piotrmurach/tty-font)
 
-gem "pastel"
+gem "pastel"   [pastel](https://github.com/piotrmurach/pastel)
 
-gem'json'
+gem'json'   [JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com) [JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
 
 ## Any system/hardware requirements
  ![myMacsystem-requirements](systemrequirement.png)
