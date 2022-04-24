@@ -24,7 +24,7 @@ This is a flower shop "Blosson House" appplication written by Ruby.
 # R5 Identify any code style guide or styling conventions that the application will adhere to
 My application followed the Ruby Style Guide (RubyStyleGuide, 2022) that recommends best practices for real-world Ruby programmers who can write code that can be maintained by other real-world Ruby programmers.The guidelines intended to improve the readability of code and make it consistent across the wide spectrum of Ruby code.  [RubyStyleGuide](https://rubystyle.guide/)
 
-I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022; RuboCopDocs, 2022). [Rubocop](https://github.com/rubocop/rubocop)[RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
+I used "RuboCop" to guide code style. RuboCop is a Ruby static code analyzer and code formatter. It is not only reporting problems that are discovered in my code but also automatically fix many of them for me. Out of the box "RuboCop" will enforce many of the guidelines outlined in the community Ruby Style Guide (Rubocop, 2022; RuboCopDocs, 2022). [Rubocop](https://github.com/rubocop/rubocop) [RuboCopDocs](https://docs.rubocop.org/rubocop/index.html)
 
 RuboCop - Flower shop application
 ![RuboCop-flowershop-app](RuboCop.png)
@@ -33,21 +33,21 @@ RuboCop - Flower shop application
 ## Four Features: 
 Display Welcome, Display Bouquets, Placing An Order, and Display Order and Total Order Price
 
-These features allowe me to demonstrate my understanding of use of variables and the concept of variable scope, loops and conditional control structures, and error handling.
+These features allow me to demonstrate my understanding of use of variables and the concept of variable scope, loops and conditional control structures, and error handling.
 
 ## Describe Each Feature:
 
-- Display Welcome:
+### Display Welcome:
 Welcome message displays flower shop name
 
-- Display Bouquets:	
+### Display Bouquets:	
 Bouquets displays bouquet items
 
-- Placing An Order:
+### Placing An Order:
  1. Validate item using bouquets
  2. Add item to order
 
-- Displays Order and Total Order Price:
+### Displays Order and Total Order Price:
  1. Display order items from order
  2. Display order cost using prices from bouquets and items in order
 
@@ -200,7 +200,7 @@ else
     retry
 
   end
-  
+
 end
 
 Also, I used the command line arguments for the delivery service of the flower shop with if and else statement.
