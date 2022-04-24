@@ -31,8 +31,9 @@ RuboCop - Flower shop application
 
 #	R6 Develop a list of features that are included in the application. 
 ## Four Features: 
-
 Display Welcome, Display Bouquets, Placing An Order, and Display Order and Total Order Price
+
+These features allowe me to demonstrate my understanding of use of variables and the concept of variable scope, loops and conditional control structures, and error handling.
 
 ## Describe Each Feature:
 
@@ -178,17 +179,28 @@ If users have the same system as me or better, the flowershop appication will de
 
 I used the command line arguments for saying "hello" to the users with if and else statement.
 
-  if ARGV[0]
+if ARGV[0]
 
-    customer_name = ARGV[0] 
-    
-  else
+  customer_name = ARGV[0]
 
-    customer_name = prompt.ask("What is your name?")
+else
 
-    puts "-----------------"
+  begin
+
+    customer_name = prompt.ask('What is your name?')
+    raise InvalidNameError if customer_name.empty?
+
+    puts '-----------------'
     puts "Hello, #{customer_name}!".colorize(:blue)
-    puts ""
+    puts ''
+
+  rescue StandardError
+
+    puts 'Please enter your name!'.colorize(:red)
+    retry
+
+  end
+  
 end
 
 Also, I used the command line arguments for the delivery service of the flower shop with if and else statement.
