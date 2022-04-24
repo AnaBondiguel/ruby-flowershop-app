@@ -135,6 +135,7 @@ I used Trello for my project management. I set up each feature into different si
 Reference for my project management: [Trello](https://trello.com/b/u7TEDeFr/app-development)
 
 ### Screenshots for project management (screenshoot cannot capture the whole picture of the features, please refer to my Trello website)
+![Trello](Trello.png)
 ![Feature1](Feature1.png)
 ![Feature2](Feature2.png)
 ![Feature3](Feature3.png)
@@ -154,19 +155,19 @@ Step 4 Write the application for the flower shop
 ## Any dependencies required by the application to operate
 I intalled rbenv 1.2.0 and ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
 
-gem "rspec", "~> 3.11"  [Rspec](https://rubygems.org/gems/respec) [Rspec](https://github.com/rspec/rspec-metagem/)
+gem "rspec", "~> 3.11" : using for TDD [Rspec](https://rubygems.org/gems/respec) [Rspec](https://github.com/rspec/rspec-metagem/)
 
-gem "colorize"   [Colorize](https://github.com/fazibear/colorize)
+gem "colorize" : colorizing app text  [Colorize](https://github.com/fazibear/colorize)
 
-gem 'rubocop'   [Rubocop](https://github.com/rubocop/rubocop)
+gem 'rubocop' : seting up coding style [Rubocop](https://github.com/rubocop/rubocop)
 
-gem 'tty-prompt', '~> 0.23.1'  [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
+gem 'tty-prompt', '~> 0.23.1' : command line prompt with a robust API for getting and validating complex inputs [TTY-prompt](https://github.com/piotrmurach/tty-prompt)
 
-gem 'tty-font'   [TTY-font](https://github.com/piotrmurach/tty-font)
+gem 'tty-font' : writing text in large stylized characters [TTY-font](https://github.com/piotrmurach/tty-font)
 
-gem "pastel"   [pastel](https://github.com/piotrmurach/pastel)
+gem "pastel" : terminal output styling  [pastel](https://github.com/piotrmurach/pastel)
 
-gem'json'   [JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com) [JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
+gem'json' : storing and displaying each bouquet description  [JSON](https://ruby-doc.org/stdlib-2.6.3/libdoc/json/rdoc/JSON.html?ref=hackernoon.com) [JSON-File](https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa)
 
 ## Any system/hardware requirements
  ![myMacsystem-requirements](systemrequirement.png)

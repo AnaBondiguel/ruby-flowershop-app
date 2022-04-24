@@ -18,7 +18,6 @@ else
   begin
     customer_name = prompt.ask('What is your name?')
     raise InvalidNameError if customer_name.empty?
-
     puts '-----------------'
     puts "Hello, #{customer_name}!".colorize(:blue)
     puts ''
